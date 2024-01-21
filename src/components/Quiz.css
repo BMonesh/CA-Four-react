@@ -1,0 +1,213 @@
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .app {
+    font-family: "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 750px;
+    background-color: #a9dbec;
+  }
+
+  .dark {
+    background-color: #00203f;
+    color: #a9dbec;
+  }
+
+  header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 4px solid #00203F;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  :root {
+    --button-bg-light: #00203F;
+    --button-text-light: white;
+    --button-bg-dark: #A9DBEC;
+    --button-text-dark: black;
+  }
+  header img{
+    width: 50%;
+    margin: 10px;
+  }
+
+  header button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 10px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--button-bg-light);
+    color: var(--button-text-light);
+    font-weight: bolder;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .app.dark header button {
+    background-color: var(--button-bg-dark);
+    color: var(--button-text-dark);
+  }
+
+  main{
+    width: 500px;
+    height: 500px;
+    background-color: #00203F;
+    margin: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .question{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .question p{
+    color: white;
+    font-size: xx-large;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .question button{
+    width: 400px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: large;
+    outline: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 10px;
+    background-color: #A9DBEC;
+    color: black;
+    border: none;
+  }
+
+  .completed p{
+    font-size: xx-large;
+    color: #A9DBEC;
+    text-align: center;
+  }
+
+  .completed h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .completed button{
+    color: black;
+    background-color: #A9DBEC;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 20%;
+    outline: none;
+    border: none;
+  }
+
+  :root {
+  --main-bg-light: #00203F;
+  --main-text-light: #A9DBEC;
+  --main-bg-dark: #A9DBEC;
+  --main-text-dark: black;
+
+  --button-bg-light: #A9DBEC;
+  --button-text-light: white;
+  --button-bg-dark: #00203F;
+  --button-text-dark: black;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--main-bg-dark);
+  color: var(--main-text-dark);
+}
+
+.app.light body {
+  background-color: var(--main-bg-light);
+  color: var(--main-text-light);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 4px solid var(--main-bg-dark);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main {
+  width: 500px;
+  height: 500px;
+  background-color: var(--main-bg-dark);
+  margin: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.question p {
+  color: var(--main-text-light);
+  font-size: xx-large;
+  margin: 20px;
+  text-align: center;
+}
+
+.question button {
+  width: 400px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: large;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease background-color, 0.3s ease color;
+  border-radius: 10px;
+  background-color: var(--button-bg-light);
+  color: var(--button-text-dark);
+  border: none;
+}
+
+.app.light main,
+.app.light .question button {
+  background-color: var(--button-bg-dark);
+  color: var(--button-text-light);
+}
